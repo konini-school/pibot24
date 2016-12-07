@@ -50,20 +50,20 @@ try:
     # The car will drive forward when the "w" key is pressed
     if(char == "w"):
       print 'forward'
-      GPIO.output(11, True)
-      GPIO.output(13, True)
-      time.sleep(0.1)
-      GPIO.output(11, False)
-      GPIO.output(13, False)
-   
-    # The car will reverse when the "s" key is pressed
-    if(char == "s"):
-      print 'back'
       GPIO.output(7, True)
       GPIO.output(15, True)
       time.sleep(0.1)
       GPIO.output(7, False)
       GPIO.output(15, False)
+   
+    # The car will reverse when the "s" key is pressed
+    if(char == "s"):
+      print 'back'
+      GPIO.output(11, True)
+      GPIO.output(13, True)
+      time.sleep(0.1)
+      GPIO.output(11, False)
+      GPIO.output(13, False)
 
     # The car will drive left when the "a" key is pressed
     if(char == "a"):
