@@ -61,7 +61,7 @@ try:
       print 'back'
       GPIO.output(7, True)
       GPIO.output(15, True)
-      time.sleep(1)
+      time.sleep(0.25)
       GPIO.output(7, False)
       GPIO.output(15, False)
 
